@@ -1,179 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clean & Renewable Energy Solutions</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clean & Renewable Energy - Educational Project</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #e8f5e9;
-      color: #1b4332;
-      overflow-x: hidden;
-    }
-    header {
-      background: linear-gradient(#2d6a4f, #1b4332);
-      padding: 20px;
-      text-align: center;
-      color: white;
-      animation: fadeDown 1.5s ease;
-    }
-    @keyframes fadeDown {
-      from { opacity: 0; transform: translateY(-30px);} 
-      to { opacity:1; transform: translateY(0);} 
-    }
-    section {
-      padding: 40px 10%;
-      animation: fadeIn 1.2s ease;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0;} 
-      to { opacity: 1;} 
-    }
-    h2 {
-      color: #2d6a4f;
-    }
-    .card {
-      background: white;
-      border-radius: 16px;
-      padding: 20px;
-      margin: 20px 0;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      transition: transform .3s ease;
-    }
-    .card:hover {
-      transform: scale(1.02);
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-      gap: 20px;
-    }
-    footer {
-      background: #1b4332;
-      padding: 30px;
-      color: white;
-      text-align: center;
-      margin-top: 40px;
-    }
-    .image-placeholder {
-      width: 100%;
-      height: 180px;
-      background: #b7e4c7;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #1b4332;
-      font-weight: 700;
-      font-size: 1.2rem;
-    }
-  </style>
+<style>
+/* GENERAL STYLING */
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f0f7f2;
+    color: #233323;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #4caf50, #2e7d32);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* NAVIGATION */
+nav {
+    background: #1b5e20;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #dcedc8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color .3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    max-width: 950px;
+    margin: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    margin-top: 40px;
+    animation: slideUp 1s ease;
+}
+
+/* TITLES */
+h2 {
+    color: #2e7d32;
+    border-left: 6px solid #66bb6a;
+    padding-left: 10px;
+}
+
+/* CARDS */
+.card {
+    background: #e8f5e9;
+    border-left: 6px solid #43a047;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    animation: fadeIn 1s ease;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideUp {
+    from {transform: translateY(40px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+}
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>Promoting Clean & Renewable Energy</h1>
-    <p>Towards a smarter, greener, and more sustainable future.</p>
-  </header>
 
-  <section>
-    <h2>Understanding Clean & Renewable Energy</h2>
+<header>
+    <h1>Clean & Renewable Energy</h1>
+    <p>Promoting sustainable solutions for a greener future</p>
+</header>
+
+<nav>
+    <a href="#examples">Examples</a>
+    <a href="#renewables">Renewable Energy</a>
+    <a href="#importance">Importance</a>
+    <a href="#project">Our Project</a>
+</nav>
+
+<!-- SECTION 1 - EXAMPLES -->
+<section id="examples">
+    <h2>Practical Examples of Energy Saving</h2>
+
     <div class="card">
-      <p>Renewable energy comes from natural sources that replenish over time, such as sunlight, wind, water, and geothermal heat. These sources are clean, sustainable, and essential in reducing global emissions.</p>
-      <h3>Why It Matters</h3>
-      <ul>
-        <li><strong>Environmental Protection:</strong> Reduces pollution and mitigates climate change.</li>
-        <li><strong>Energy Independence:</strong> Less reliance on imported fossil fuels.</li>
-        <li><strong>Economic Growth:</strong> Creates jobs in modern energy sectors.</li>
-      </ul>
-      <h3>Consequences of Not Using Clean Energy</h3>
-      <ul>
-        <li>Worsening global warming and extreme weather.</li>
-        <li>Air and water pollution harmful to human health.</li>
-        <li>Depletion of limited fossil fuel resources.</li>
-      </ul>
-      <h3>Long-Term Benefits</h3>
-      <p>Clean energy supports sustainable development, stable economies, and healthier communities for future generations.</p>
+        <h3>Motion-Sensor LED Light (Main Example)</h3>
+        <p>
+            A motion-sensor LED light automatically turns on when it detects movement and turns off when the area is empty. 
+            This prevents unnecessary energy consumption in hallways, bathrooms, garages, or outdoor areas.
+        </p>
+        <p><strong>Benefits:</strong></p>
+        <ul>
+            <li>Reduces electricity waste</li>
+            <li>Improves home safety</li>
+            <li>Long-lasting LED technology</li>
+            <li>Ideal for renewable-energy powered homes</li>
+        </ul>
     </div>
-  </section>
 
-  <section>
-    <h2>Main Example: Motion‑Sensor LED Light</h2>
     <div class="card">
-      <img src="https://source.unsplash.com/featured/?motion-sensor,light" alt="Motion Sensor Light" style="width:100%;height:200px;border-radius:12px;object-fit:cover;"/>
-      <p>
-        A motion‑sensor LED light helps save energy by automatically turning on only when movement is detected. When no motion is present, the light remains off, reducing unnecessary power consumption. This is a simple yet highly effective way to lower electricity usage in homes, workplaces, and public spaces.
-      </p>
-      <h3>How to Build This Product</h3>
-      <ul>
-        <li><strong>Materials Required:</strong> LED bulb, PIR motion sensor, small plastic housing, 12V power supply, basic wiring.</li>
-        <li><strong>Estimated Cost:</strong> $10–$15 USD.</li>
-        <li><strong>Assembly Time:</strong> 30–45 minutes.</li>
-        <li><strong>Difficulty Level:</strong> Beginner‑friendly.</li>
-      </ul>
+        <h3>Solar Water Heater</h3>
+        <p>
+            Uses sunlight to heat water for showers and home use. It significantly reduces electric or gas consumption.
+        </p>
     </div>
-  </section>
 
-  <section>
-    <h2>Other Renewable Energy Solutions</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="file:///D:/Users/Admin/Downloads/energia-solar.jpg" alt="Solar Panels" style="width:100%;height:180px;border-radius:12px;object-fit:cover;"/>
-        <p>Solar energy converts sunlight into electricity, offering a clean and unlimited power source.</p>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/featured/?solar,panel" alt="Solar Panels" style="width:100%;height:180px;border-radius:12px;object-fit:cover;"/>
-        <p>Wind power uses natural airflow to generate energy efficiently and sustainably.</p>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/featured/?solar,panel" alt="Solar Panels" style="width:100%;height:180px;border-radius:12px;object-fit:cover;"/>
-        <p>Hydropower systems use water flow to generate clean and consistent electricity.</p>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/featured/?solar,panel" alt="Solar Panels" style="width:100%;height:180px;border-radius:12px;object-fit:cover;"/>
-        <p>Geothermal systems harness underground heat for long‑term, low‑emission energy production.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Why Renewable Energy Matters</h2>
     <div class="card">
-      <p>
-        Clean energy reduces carbon emissions, protects ecosystems, and promotes long‑term sustainability. By adopting even small solutions—like motion‑sensor lighting—we contribute to global climate responsibility.
-      </p>
+        <h3>Wind-Powered Backyard Turbine</h3>
+        <p>
+            Small wind turbines can power garden lights, pumps or small home appliances, reducing reliance on electricity grids.
+        </p>
     </div>
-    </section>
+</section>
 
-  <section>
-    <h2>Understanding Clean & Renewable Energy</h2>
+<!-- SECTION 2 - ABOUT RENEWABLES -->
+<section id="renewables">
+    <h2>What Are Clean & Renewable Energies?</h2>
+
+    <p>
+        Renewable energies come from natural sources that are constantly replenished, such as sunlight, wind, water, and geothermal heat. 
+        Clean energy produces little to no pollution, helping reduce global warming and improving environmental quality.
+    </p>
+
+    <h3>Main Types:</h3>
+    <ul>
+        <li><strong>Solar Energy:</strong> generated by capturing sunlight.</li>
+        <li><strong>Wind Energy:</strong> produced by wind turbines.</li>
+        <li><strong>Hydropower:</strong> energy from flowing water.</li>
+        <li><strong>Biomass:</strong> organic materials that produce energy.</li>
+        <li><strong>Geothermal:</strong> heat from beneath the Earth’s surface.</li>
+    </ul>
+
+    <h3>Consequences of Not Using Clean Energy:</h3>
+    <ul>
+        <li>Increased greenhouse gases</li>
+        <li>Global warming</li>
+        <li>Polluted air & water</li>
+        <li>Higher energy costs</li>
+        <li>Depletion of fossil fuels</li>
+    </ul>
+</section>
+
+<!-- SECTION 3 - IMPORTANCE -->
+<section id="importance">
+    <h2>Why Are Renewable Energies Important?</h2>
+    <p>
+        The transition to renewable energy helps protect ecosystems, reduces pollution, improves public health, and strengthens 
+        economic stability. Clean energy leads to more efficient systems and decreases dependence on non-renewable resources.
+    </p>
+
+    <ul>
+        <li>Reduces carbon footprint</li>
+        <li>Creates new green jobs</li>
+        <li>Reduces household energy bills</li>
+        <li>Improves energy security</li>
+    </ul>
+</section>
+
+<!-- SECTION 4 - OUR MAIN PROJECT -->
+<section id="project">
+    <h2>How to Build a Motion-Sensor LED Light</h2>
+
     <div class="card">
-      <p>Renewable energy comes from natural sources that replenish themselves over time, such as sunlight, wind, water, and geothermal heat. Unlike fossil fuels, these resources do not run out and do not release harmful greenhouse gases when used.</p>
-      <h3>Why It Matters</h3>
-      <ul>
-        <li><strong>Environmental Protection:</strong> Reduces pollution and mitigates climate change by lowering carbon emissions.</li>
-        <li><strong>Energy Independence:</strong> Reduces reliance on imported fossil fuels and strengthens local energy systems.</li>
-        <li><strong>Economic Growth:</strong> Creates new jobs in engineering, installation, maintenance, and research.</li>
-      </ul>
-      <h3>Consequences of Not Using Clean Energy</h3>
-      <ul>
-        <li>Increased global warming due to accumulation of greenhouse gases.</li>
-        <li>Air and water pollution that affects human health.</li>
-        <li>Depletion of non-renewable resources, causing energy shortages and rising costs.</li>
-      </ul>
-      <h3>Long-Term Benefits</h3>
-      <p>Transitioning to renewable energy leads to sustainable communities, healthier environments, and energy systems that can support future generations. It also encourages innovation in technology and promotes responsible energy consumption worldwide.</p>
+        <h3>Materials Needed</h3>
+        <ul>
+            <li>PIR motion sensor</li>
+            <li>LED light or LED strip</li>
+            <li>12V power supply</li>
+            <li>Plastic or wooden casing</li>
+            <li>Wires & connectors</li>
+            <li>Switch (optional)</li>
+        </ul>
     </div>
-  </section>
 
-  <footer>
-    <p>© 2025 National Environmental Awareness Project — For educational purposes only.</p>
-  </footer>
+    <div class="card">
+        <h3>Estimated Cost</h3>
+        <ul>
+            <li>PIR sensor: $4 – $8</li>
+            <li>LED light: $5 – $10</li>
+            <li>Power supply: $5 – $8</li>
+            <li>Housing materials: $2 – $5</li>
+        </ul>
+        <p><strong>Total:</strong> $16 – $31 (depending on materials)</p>
+    </div>
+
+    <div class="card">
+        <h3>Manufacturing Time</h3>
+        <p>Approximately <strong>1 to 2 hours</strong> depending on assembly skills.</p>
+    </div>
+
+    <div class="card">
+        <h3>Assembly Steps</h3>
+        <ol>
+            <li>Connect the LED light to the 12V power supply.</li>
+            <li>Wire the motion sensor so it activates the LED when movement is detected.</li>
+            <li>Mount the components inside the casing.</li>
+            <li>Test the system and adjust sensitivity if needed.</li>
+            <li>Install the light in the desired area.</li>
+        </ol>
+    </div>
+</section>
+
+<footer>
+    © 2025 Educational Renewable Energy Project — All rights reserved.
+</footer>
 
 </body>
 </html>
